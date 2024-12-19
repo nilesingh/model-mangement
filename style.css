@@ -1,0 +1,850 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding-top: 0.1px;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav h1 {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monument;
+  font-size: 36px;
+  letter-spacing: -1px;
+  position: relative;
+}
+#nav h1::after {
+  content: "©";
+  font-family: gilroy;
+  position: absolute;
+  top: 24%;
+  right: 16%;
+  font-size: 16px;
+  font-weight: 600;
+}
+#nav h1::before {
+  content: "model mangement";
+  font-family: gilroy;
+  position: absolute;
+  top: 66%;
+  right: 20%;
+  font-size: 16px;
+  font-weight: 500;
+}
+#nav h2 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  font-size: 22px;
+  font-weight: 600;
+}
+#nav h2:nth-last-child(2) {
+  width: 29%;
+}
+#nav h3 {
+  display: none;
+}
+#center {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  padding: 4vw;
+}
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay {
+  height: 50%;
+  width: 93%;
+  position: absolute;
+  bottom: 0;
+  padding: 5vw;
+  color: #fff;
+}
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+#over1 h1 {
+  font-family: monument;
+  font-size: 3rem;
+}
+#over1 h2 {
+  font-size: 1vw;
+  padding: 2vw 2.1vw;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fff;
+}
+#over2 h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+#over2 img {
+  height: 3vw;
+  padding-right: 100px;
+}
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 2vw;
+}
+
+#scroll img {
+  /* display: none; */
+  height: 50%;
+  border-radius: 50%;
+  width: 9%;
+  margin: 1vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+#container {
+  height: 110%;
+  width: 110%;
+  display: inline-block;
+  animation-name: anime;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabate {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#alphabate h5 {
+  font-size: 1.6vw;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid #000;
+  letter-spacing: 4px;
+  margin-right: 2vw;
+}
+#alphabate h6 {
+  font-size: 0.7vw;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5vw 0.8vw;
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+#alphabate h6:hover {
+  border: 1px solid #000;
+}
+
+/* === Page 2 === */
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 4vw;
+}
+
+#page2-left {
+  height: 90%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  /* overflow: hidden; */
+  background-image: url(https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#page2-left p {
+  font-size: 2rem;
+  font-family: "monument", serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 87vh 0vh;
+}
+
+#page2-right {
+  height: 90%;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+}
+#page2-right img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+#paragraph {
+  display: flex;
+  padding-top: 3vw;
+}
+
+#paragraph p1 {
+  font-size: 25px;
+  font-family: montrast;
+  font-weight: 500;
+  width: 75%;
+}
+#paragraph p2 {
+  font-size: 12px;
+  width: 80%;
+  padding-left: 100px;
+}
+
+#page2-center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 2vw 4vw;
+}
+#page2-center-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#page2-center-left p3 {
+  font-size: 25px;
+  font-weight: 360;
+  width: 55%;
+}
+#page2-center-left img {
+  padding-right: 45%;
+  margin-top: 22%;
+}
+
+#page2-center-right {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1529339728767-2c2824f2bb93?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#page2-bottom {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 4vw 4vw 0 4vw;
+}
+#page2-bottom img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+#page2-bottom p {
+  font-size: 2rem;
+  font-family: "monument", serif;
+  font-weight: 600;
+  margin: 9vh 80vh;
+}
+
+#page3 {
+  padding: 2vw 4vw;
+}
+
+.elem {
+  height: 13vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+.elem:nth-last-child(3) {
+  border-bottom: 2px solid black;
+}
+
+.elem img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 18%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+.elem:nth-last-child(6) img {
+  left: 40%;
+}
+.elem:nth-last-child(4) img {
+  left: 40%;
+}
+.elem:hover {
+  background-color: #ececec;
+}
+.elem:hover img {
+  opacity: 1;
+  left: 32%;
+}
+.elem h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+}
+#elem-part2 {
+  width: 40%;
+}
+#elem-part2 h1 {
+  font-size: 31px;
+  font-weight: 600;
+}
+#elem-part2 h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#page3-center {
+  padding: 4vw 0 0 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#page3-center-left {
+  height: 100%;
+  width: 80%;
+}
+#page3-center-right {
+  width: 100%;
+  height: 100%;
+}
+#page3-center-right h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "monument", serif;
+  font-weight: 600;
+}
+#page3-center-right p {
+  font-size: 20px;
+  width: 70%;
+  font-weight: 600;
+  padding: 3vw 0 2vw 0;
+}
+#page3-center-right p1 {
+  font-size: 15px;
+  width: 70%;
+  font-weight: 500;
+  padding: 3vw 0 1vw 0;
+}
+#page3-center-right-bottom {
+  display: flex;
+  padding-top: 2vw;
+}
+
+.box-img img {
+  height: 47vh;
+  width: 33vw;
+  padding: 0 1vw 0 0;
+  background-size: cover;
+  background-position: center;
+}
+.box-img1 img {
+  height: 47vh;
+  width: 25vw;
+  padding: 0 0 0 2vw;
+}
+
+#page3-bottom {
+  padding: 3vw 0 2vw 0;
+}
+#page3-bottom img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* === marque === */
+
+#marque {
+  /* height: 15vh; */
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.8vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#marque h1 {
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: monument;
+  margin-right: 16px;
+  letter-spacing: 3px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes move {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+#footer {
+  height: 12vh;
+  width: 100%;
+}
+
+#heading {
+  height: 9vh;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+#heading h1 {
+  height: 100%;
+  width: 18%;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+  font-family: monument;
+  font-size: 36px;
+  letter-spacing: -1px;
+  position: relative;
+}
+#heading h1::after {
+  content: "©";
+  font-family: gilroy;
+  position: absolute;
+  top: 19%;
+  right: 15%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#heading h1::before {
+  content: "model mangement";
+  font-family: gilroy;
+  position: absolute;
+  top: 69%;
+  right: 18%;
+  font-size: 13px;
+  font-weight: 500;
+}
+#heading h2 {
+  height: 100%;
+  width: 25%;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid black;
+  font-size: 22px;
+  font-weight: 600;
+}
+#heading h3 {
+  height: 100%;
+  width: 45%;
+  padding-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* === Responsive === */
+
+@media (max-width: 600px) {
+  #nav {
+    height: 6vh;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav h1 {
+    height: 100%;
+    width: 45%;
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  #nav h1::after {
+    display: none;
+  }
+  #nav h1::before {
+    display: none;
+  }
+  #nav h2 {
+    display: none;
+  }
+  #nav h3 {
+    display: inline-block;
+    padding-right: 4vw;
+    font-size: 7vw;
+    cursor: pointer;
+  }
+  #center {
+    height: 55%;
+    width: 100%;
+    position: relative;
+    padding: 4vw;
+  }
+  #content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  #content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #overlay {
+    height: 23%;
+    padding: 3vw;
+    color: #fff;
+  }
+
+  #over1 h1 {
+    font-family: monument;
+    font-size: 24px;
+  }
+  #over1 h2 {
+    display: none;
+  }
+
+  #over2 {
+    display: none;
+  }
+
+  #scroll {
+    height: 14vh;
+    width: 100%;
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vw;
+  }
+
+  #scroll img {
+    /* display: none; */
+    height: 50%;
+    border-radius: 50%;
+    width: 9%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: center;
+  }
+  #container {
+    height: 170%;
+    width: 270%;
+  }
+  #alphabate {
+    height: 7vh;
+    width: 100%;
+  }
+  #alphabate h5 {
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 1px solid #000;
+    letter-spacing: 0px;
+    margin-right: 0vw;
+  }
+  #alphabate h6 {
+    font-size: 6px;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0.5vw 0.8vw;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #alphabate h6:hover {
+    border: 1px solid #000;
+  }
+  #page2 {
+    height: 40%;
+    padding: 3vw 4vw;
+  }
+
+  #page2-left {
+    height: 100%;
+    width: 100%;
+  }
+  #page2-left p {
+    font-size: 19px;
+    font-family: "monument", serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin: 38.5vh 0vh;
+    text-align: center;
+  }
+
+  #page2-right {
+    display: none;
+  }
+
+  #page2-center {
+    height: 45%;
+    padding: 13vw 4vw 0 4vw;
+  }
+  #page2-center-left {
+    height: 85%;
+    width: 100%;
+  }
+  #page2-center-left p3 {
+    font-size: 12px;
+    font-weight: 360;
+    width: 145%;
+  }
+  #page2-center-left img {
+    height: 130px;
+    width: 40vw;
+    padding-right: 0%;
+    margin-top: 10%;
+  }
+  #page2-center-right {
+    height: 155px;
+  }
+
+  #page2-bottom {
+    height: 45%;
+    width: 100%;
+    padding: 0;
+  }
+  #page2-bottom img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #page2-bottom p {
+    font-size: 25px;
+    font-family: "monument", serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 6vw;
+    text-align: center;
+  }
+
+  #page3 {
+    padding: 6vw 4vw;
+  }
+
+  .elem {
+    height: 8vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+  }
+  .elem:nth-last-child(3) {
+    border-bottom: 2px solid black;
+  }
+
+  .elem img {
+    position: absolute;
+    height: 55px;
+    width: 58px;
+    border-radius: 50%;
+    left: 30%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all ease 0.7s;
+  }
+  /* .elem:nth-last-child(6) img {
+    left: 40%;
+  }
+  .elem:nth-last-child(4) img {
+    left: 40%;
+  } */
+  .elem:hover {
+    background-color: #655050;
+  }
+  .elem:hover img {
+    opacity: 1;
+    /* left: 5%; */
+  }
+  .elem h4 {
+    font-size: 10px;
+  }
+  #elem-part2 {
+    width: 35%;
+  }
+  #elem-part2 h1 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #elem-part2 h5 {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #page3-center {
+    padding: 11vw 0 0 0;
+  }
+  #page3-center-left {
+    height: 100%;
+    width: 100%;
+  }
+  #page3-center-left img {
+    height: 100%;
+    width: 100%;
+  }
+  #page3-center-right {
+    width: 100%;
+    height: 100%;
+    text-align: -webkit-center;
+  }
+  #page3-center-right h1 {
+    font-size: 1rem;
+    padding-bottom: 16vw;
+  }
+  #page3-center-right p {
+    font-size: 10px;
+    width: 60%;
+  }
+  #page3-center-right p1 {
+    display: none;
+  }
+  #page3-center-right-bottom {
+    display: flex;
+    padding-top: 2vw;
+  }
+
+  .box-img img {
+    display: none;
+  }
+  .box-img1 img {
+    display: none;
+  }
+  #page3-bottom {
+    padding: 5vw 0 0 0;
+  }
+  #page3-bottom img {
+    height: 30vh;
+  }
+
+  #marque {
+    width: 100%;
+  }
+
+  #marque h1 {
+    font-size: 5vw;
+    -webkit-text-stroke: 1px black;
+  }
+  #footer {
+    height: 7vh;
+    width: 100%;
+  }
+
+  #heading {
+    height: 5vh;
+    width: 100%;
+    margin-top: 0;
+    border-top: 2px solid #f8f8f8;
+    border-bottom: 2px solid #f8f8f8;
+    text-align: -webkit-center;
+  }
+  #heading h1 {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+  }
+  #heading h1::after {
+    display: none;
+  }
+  #heading h1::before {
+    display: none;
+  }
+  #heading h2 {
+    display: none;
+  }
+  #heading h3 {
+    display: none;
+  }
+}
